@@ -1,7 +1,7 @@
 name: Bump version regularly
 on:
   schedule:
-    - cron: "30 * * * *"
+    - cron: "39 * * * *"
 
 jobs:
   build:
@@ -14,7 +14,7 @@ jobs:
         fetch-depth: '0'
 
     - name: Bump version and push tag
-      uses: anothrNick/github-tag-action@v1.70.0
+      uses: anothrNick/github-tag-action@1.70.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         WITH_V: true
