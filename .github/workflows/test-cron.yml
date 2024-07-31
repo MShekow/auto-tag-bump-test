@@ -1,7 +1,7 @@
 name: Bump version regularly
 on:
   schedule:
-    - cron: "39 * * * *"
+    - cron: "49 * * * *"
 
 jobs:
   build:
